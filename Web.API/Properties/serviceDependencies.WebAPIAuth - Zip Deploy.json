@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/webapiauthdbserver/databases/Web.API_db",
+      "type": "mssql.azure",
+      "connectionId": "IdentityDB"
+    },
+    "mssql1": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "AuthServer"
+    },
+    "mssql3": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/webapiauthdbserver/databases/Web.APIData_db",
+      "type": "mssql.azure",
+      "connectionId": "DataDB"
+    }
+  }
+}
